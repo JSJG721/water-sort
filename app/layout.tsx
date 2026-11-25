@@ -4,6 +4,13 @@ import './globals.css';
 export const metadata: Metadata = {
   title: '액체 따르기 퍼즐',
   description: '같은 색 액체를 한 병에 모으는 가벼운 퍼즐 게임',
+  applicationName: '액체 따르기',
+  appleWebApp: {
+    capable: true,
+    title: '액체 따르기',
+    statusBarStyle: 'black',
+  },
+  formatDetection: { telephone: false },
 };
 
 export const viewport: Viewport = {

@@ -14,6 +14,7 @@ import {
   pour,
   solve,
 } from '@/lib/waterSort';
+import InstallApp from './InstallApp';
 
 const LEVEL_KEY = 'waterSort.level';
 const SOUND_KEY = 'waterSort.muted';
@@ -313,7 +314,8 @@ function Board({
           <p className="text-xs uppercase tracking-widest text-white/50">Water Sort</p>
           <h1 className="text-2xl font-bold text-white">레벨 {level}</h1>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
+          <InstallApp />
           <span className="rounded-full bg-white/10 px-3 py-1 text-sm text-white/80">
             {colorCount}색 · {moves}수
           </span>
